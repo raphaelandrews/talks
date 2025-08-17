@@ -315,7 +315,7 @@ glowSeed: 100
 
 ---
 class: flex justify-center items-center gap-20 px-40 text-xl
-clicks: 2
+clicks: 14
 glowSeed: 203
 ---
 
@@ -337,4 +337,145 @@ glowSeed: 203
        <span text-sm transition="all ease-in-out" :class="$slidev.nav.clicks > 1 ? 'opacity-50' : 'opacity-0'">Gestão da Qualidade no Desenvolvimento de Software</span>
     </div>
   </v-clicks>
+</div>
+
+<div grid grid-cols-2 gap-4 absolute>
+  <v-clicks>
+    <div
+      :class="$clicks < 3 ? 'opacity-0' : 'opacity-100'"
+      rounded-lg
+      border="2 solid blue-800/30" bg="blue-900/30"
+      shadow-lg
+      transition duration-500 ease-in-out
+      flex
+      h-12
+    >
+      <div px-2 py-2 flex items-center justify-center>
+        📑
+      </div>
+      <div bg="blue-800/30" w-full px-3 py-2 flex items-center justify-center text-center font-bold>
+        <span>Requisitos</span>
+      </div>
+    </div>
+    <div
+      :class="$clicks < 6 ? 'opacity-0' : 'opacity-100'"
+      rounded-lg
+      border="2 solid emerald-800/30" bg="emerald-900/30"
+      shadow-lg
+      transition duration-500 ease-in-out
+      flex
+      h-12
+    >
+      <div px-2 py-2 flex items-center justify-center>
+        ⚙️
+      </div>
+      <div bg="emerald-800/30" w-full px-3 py-2 flex items-center justify-center text-center font-bold>
+        <span>Processos</span>
+      </div>
+    </div>
+    <div
+      :class="$clicks < 9 ? 'opacity-0' : 'opacity-100'"
+      rounded-lg
+      border="2 solid orange-500/60" bg="orange-600/60"
+      shadow-lg
+      transition duration-500 ease-in-out
+      flex
+      h-12
+    >
+      <div px-2 py-2 flex items-center justify-center>
+        🧪
+      </div>
+      <div bg="orange-500/60" w-full px-3 py-2 flex items-center justify-center text-center font-bold>
+        <span>Testes</span>
+      </div>
+    </div>
+    <div
+      :class="$clicks < 12 ? 'opacity-0' : 'opacity-100'"
+      rounded-lg
+      border="2 solid rose-600/30" bg="rose-700/40"
+      shadow-lg
+      transition duration-500 ease-in-out
+      flex
+      h-12
+    >
+      <div px-2 py-2 flex items-center justify-center>
+        <div i-carbon:globe h-4 w-6 />
+      </div>
+      <div bg="rose-600/30" w-full px-3 py-2 flex items-center justify-center text-center font-bold>
+        <span>Melhoria Contínua</span>
+      </div>
+    </div>
+  </v-clicks>
+</div>
+
+<div
+  absolute
+  class="inset-0 flex items-center justify-center"
+  :class="$clicks === 4 ? 'backdrop-blur-md bg-black/30' : 'opacity-0 translate-y-0 scale-90'"
+  transition duration-800 ease-in-out
+  v-click
+>
+  <div border="2 solid blue-600" bg="blue-800/40" rounded-lg w="[50%]">
+
+  <div font-bold rounded-t-lg bg="blue-800" px-4 py-3>Definição de Requisitos Claros</div>
+
+  <div px-4 py-3 text-sm>
+    A qualidade começa na fase de levantamento de requisitos. Requisitos ambíguos ou incompletos são uma das maiores causas de problemas.
+  </div>
+
+  </div>
+</div>
+
+<div
+  absolute
+  class="inset-0 flex items-center justify-center"
+  :class="$clicks === 7 ? 'backdrop-blur-md bg-black/30' : 'opacity-0 translate-y-0 scale-90'"
+  transition duration-800 ease-in-out
+  v-click
+>
+  <div border="2 solid emerald-600" bg="emerald-800/40" rounded-lg w="[50%]">
+
+  <div font-bold rounded-t-lg bg="emerald-800" px-4 py-3>Processos de Desenvolvimento Bem Definidos</div>
+
+  <div px-4 py-3 text-sm>
+    A adoção de metodologias (como Scrum, Kanban ou outras dependendo do contexto) e a padronização de processos são essenciais para a consistência.
+  </div>
+
+  </div>
+</div>
+
+<div
+  absolute
+  class="inset-0 flex items-center justify-center"
+  :class="$clicks === 10 ? 'backdrop-blur-md bg-black/30' : 'opacity-0 translate-y-0 scale-90'"
+  transition duration-800 ease-in-out
+  v-click
+>
+  <div border="2 solid orange-300" bg="orange-500/60" rounded-lg w="[50%]">
+
+  <div font-bold rounded-t-lg bg="orange-500" px-4 py-3>Testes</div>
+
+  <div px-4 py-3 text-sm>
+     A fase de testes é crítica e envolve diversos tipos, como testes de unidade, integração, sistema, aceitação, performance, segurança e usabilidade. Automação de testes é um facilitador poderoso.
+  </div>
+
+  </div>
+</div>
+
+<div
+  absolute
+  class="inset-0 flex items-center justify-center"
+  :class="$clicks === 13 ? 'backdrop-blur-md bg-black/30' : 'opacity-0 translate-y-0 scale-90'"
+  transition duration-800 ease-in-out
+  v-click
+>
+  <div border="2 solid rose-600" bg="rose-800/80" rounded-lg w="[50%]">
+
+  <div font-bold rounded-t-lg bg="rose-800" px-4 py-3>Testes</div>
+
+  <div px-4 py-3 text-sm>
+     A fase de testes é crítica e envolve diversos tipos, como testes de unidade, integração, sistema, aceitação, performance, segurança e usabilidade. Automação de testes é um facilitador poderoso.
+  </div>
+
+  </div>
 </div>
