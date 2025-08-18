@@ -66,11 +66,11 @@ glowSeed: 203
     <div text-left w-full h-full flex="~ col justify-center">
       <div class="font-bold text-3xl mb-8">✳️ Principais Características</div>
         <div class="space-y-2 list-decimal pl-4">
-          <div v-click>🎯 Foco no cliente interno e externo</div>
           <div v-click>📈 Compromisso com a melhoria contínua</div>
           <div v-click>✅ Valorização da padronização de processos</div>
           <div v-click>🎉 Incentivo à participação e envolvimento de todos os colaboradores</div>
           <div v-click>💬 Comunicação clara e transparente</div>
+          <div v-click>🎯 Foco no cliente interno e externo</div>
         </div>
       </div>
   </div>
@@ -117,7 +117,7 @@ glowSeed: 203
       <div class="font-bold text-3xl mb-8">📑 Papéis da Liderança</div>
         <div class="space-y-2 list-decimal pl-4">
           <div v-click>🎯 Definir uma visão clara para a qualidade, alinhada à missão e valores da organização</div>
-          <div v-click>🌟 Servir como exemplo de comprometimento e responsabilidade</div>
+          <div v-click>🌟 Servir como exemplo de comprometiment o e responsabilidade</div>
           <div v-click>🤝 Promover um ambiente de confiança, abertura e cooperação</div>
           <div v-click>🧠 Incentivar a capacitação e o desenvolvimento de competências</div>
           <div v-click>🥳 Reconhecer e valorizar conquistas relacionadas à qualidade</div>
@@ -208,38 +208,30 @@ glowSeed: 350
 </style>
 
 ---
-layout: intro
-class: px-24
-glowSeed: 205
+class: flex justify-center items-center gap-20 px-20 text-xl
+clicks: 2
 ---
 
-<div flex items-center justify-center>
-  <div
-    v-click flex flex-col gap-2 items-center justify-center transition duration-500 ease-in-out
-    :class="$clicks < 1 ? 'translate-x--20' : 'translate-x-0'"
-  >
-    <div font-bold text-3xl text-center>
-      📚
-      <br>
-      Gestão da Qualidade
+<div flex flex-col items-center>
+  <v-clicks>
+    <div mt-4>
+      <h1 flex items-center text="3xl!" gap-4>
+        <div font-bold text-center :class="[$clicks < 2 ? 'translate-x-42' : 'translate-x-0']" transition duration-500 ease-in-out text-nowrap>
+          📚
+          <br>
+          Gestão <br> da Qualidade
+        </div>
+        <span :class="[$clicks < 2 ? 'opacity-0' : 'opacity-100']" transition duration-500 ease-in-out>
+          <div i-carbon:close text-4xl />
+        </span>
+        <div font-bold text-center :class="[$clicks < 2 ? 'opacity-0' : 'opacity-100']" transition duration-500 ease-in-out>
+          🖥️
+          <br>
+          Desenvolvimento <br> de Software
+        </div>
+      </h1>
     </div>
-  </div>
-  <div
-    v-after pl-15 pr-15 transition duration-500 ease-in-out
-    :class="$clicks < 1 ? 'scale-80' : 'scale-100'"
-  >
-    <div i-carbon:close text-8xl />
-  </div>
-  <div
-    v-after flex flex-col gap-2 items-center justify-center transition duration-500 ease-in-out
-    :class="$clicks < 1 ? 'translate-x-20' : 'translate-x-0'"
-  >
-    <div font-bold text-3xl text-center>
-      🖥️
-      <br>
-      Desenvolvimento <br> de Software
-    </div>
-  </div>
+  </v-clicks>
 </div>
 
 ---
@@ -673,6 +665,74 @@ glowSeed: 368
 
 # 💯 Métricas
 
+<span>Segurança</span>
+
+<div mt-16 />
+
+<div>
+
+  <div class="flex flex-col justify-center items-center">
+    <div v-click="1" class="rounded-lg p-8 bg-teal-900/20 text-center flex flex-col justify-center items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#009689" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-alert-icon lucide-shield-alert"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+      <div font-bold text-sm text-nowrap mt-2>Segurança</div>
+    </div>
+  </div>
+
+  <div v-click="2">
+    <div text-center class="mt-6">
+      <span v-mark="{ at: 3, color: 'rgb(144, 200, 255)', type: 'underline' }">Proteção</span> contra acessos não autorizados e falhas de segurança.
+    </div>
+  </div>
+
+</div>
+
+---
+class: py-10
+glow: bottom
+glowSeed: 368
+---
+
+# 💯 Métricas
+
+<span>Segurança</span>
+
+<div mt-8 />
+
+<div v-click="1" class="bg-teal-900/20 rounded-lg p-4">
+  <div font-bold text-teal-300 mb-2 flex items-center>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy-check-icon lucide-copy-check"><path d="m12 15 2 2 4-4"/><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+    <span class="mt-1 ml-2">Aplicação Prática</span>
+  </div>
+  <div class="text-xs bg-teal-800/30 rounded p-2 font-mono">
+    Aplicações com autenticação em dois fatores e criptografia de dados.
+  </div>
+</div>
+
+<div v-click="2" class="mt-4 border-2 border-emerald-500/30 rounded-lg p-2 bg-emerald-900/20">
+  <div text-xl font-bold mb-4 text-emerald-300 flex items-center>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-spotlight-icon lucide-spotlight"><path d="M15.295 19.562 16 22"/><path d="m17 16 3.758 2.098"/><path d="m19 12.5 3.026-.598"/><path d="M7.61 6.3a3 3 0 0 0-3.92 1.3l-1.38 2.79a3 3 0 0 0 1.3 3.91l6.89 3.597a1 1 0 0 0 1.342-.447l3.106-6.211a1 1 0 0 0-.447-1.341z"/><path d="M8 9V2"/></svg>
+    <span class="mt-1 ml-2">Exemplos</span>
+  </div>
+  <div space-y-3>
+    <div class="px-4 py-2 bg-emerald-800/30 rounded-lg text-sm">
+      <div font-bold>Bancos Vituais</div>
+      <div text-xs text-emerald-200>Biometria e MFA</div>
+    </div>
+    <div class="px-4 py-2 bg-emerald-800/30 rounded-lg text-sm">
+      <div font-bold>LastPass</div>
+      <div text-xs text-emerald-200>Gerenciador de senhas seguro</div>
+    </div>
+  </div>
+</div>
+
+---
+class: py-10
+glow: bottom
+glowSeed: 368
+---
+
+# 💯 Métricas
+
 <span>UI/UX</span>
 
 <div mt-16 />
@@ -767,16 +827,30 @@ glowSeed: 368
       >
     </n-carousel>
   </div>
-
-  <style scoped>
-    .carousel-img {
-      width: 100%;
-      height: 240px;
-      object-fit: fill;
-    }
-  </style>
-
 </div>
+
+<div v-click="3" flex>
+  <div flex flex-col mt-4 bg="red-800/20" border="2 solid red-800/50" rounded-lg>
+    <div bg="red-800/30" px-4 py-2 text-red-200 flex items-center>
+      <div i-carbon:warning-alt mr-2 />Suap
+    </div>
+    <div flex justify-between px-6 py-4 text-sm>
+      <div flex items-center gap-2>
+        <span>😡 Não responsivo</span>
+        <span>😵 Interface confusa</span>
+        <span>🔻 UX</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style scoped>
+  .carousel-img {
+    width: 100%;
+    height: 240px;
+    object-fit: fill;
+  }
+</style>
 
 ---
 class: py-10
@@ -876,7 +950,7 @@ glowSeed: 368
       >
       <img
         class="carousel-img"
-         src="/google.jpg"
+        src="/google.jpg"
       >
     </n-carousel>
   </div>
@@ -889,4 +963,64 @@ glowSeed: 368
     }
   </style>
 
+</div>
+
+---
+layout: intro
+class: px-35
+glowSeed: 205
+---
+
+<div flex mb-12>
+  <div
+    v-click="1" flex flex-col items-center transition duration-500 ease-in-out
+    :class="$clicks < 1 ? 'translate-y-20 opacity-0' : 'translate-y-0 opacity-100'"
+  >
+    <img src="/mcmaster-carr.jpg" w-56 object-fit mb-5 rounded-xl class="aspect-3/2">
+    <span font-semibold text-3xl>McMaster-Carr</span>
+  </div>
+  <div flex-1 />
+  <div
+    v-click="2" flex flex-col items-center transition duration-500 ease-in-out
+    :class="$clicks < 2 ? 'translate-y-20 opacity-0' : 'translate-y-0 opacity-100'"
+  >
+    <img src="/netflix.jpg" w-56 object-fit mb-5 rounded-xl class="aspect-3/2">
+    <span font-semibold text-3xl>Netflix</span>
+  </div>
+  <div flex-1 />
+  <div
+    v-click="3" flex flex-col items-center transition duration-500 ease-in-out
+    :class="$clicks < 3 ? 'translate-y-20 opacity-0' : 'translate-y-0 opacity-100'"
+  >
+    <img src="/google.jpg" w-56 object-fit mb-5 rounded-xl class="aspect-3/2">
+    <span font-semibold text-3xl>Google</span>
+  </div>
+</div>
+
+<div v-click="4" class="flex justify-center items-start">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2b7fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link2-icon lucide-link-2"><path d="M9 17H7A5 5 0 0 1 7 7h2"/><path d="M15 7h2a5 5 0 1 1 0 10h-2"/><line x1="8" x2="16" y1="12" y2="12"/></svg>
+  <a href="https://next-faster.vercel.app/" target="_blank" class="text-blue-500 hover:underline">NextFaster</a>
+</div>
+
+---
+
+<tldraw class="w-200 h-120" doc="tldraw/doc-3w4j4IvwiH2h8jIekuiXP.json"></tldraw>
+
+---
+title: Thank you
+class: py-10
+glowSeed: 230
+poweredBy: true
+---
+
+<div flex>
+  <div flex-1>
+    <div mt-50 />
+    <div font-bold text-5xl>
+      FIM
+    </div>
+  </div>
+  <div class="absolute top-1/2 -translate-y-1/2 right-24" >
+    <img src="/party-time.gif" w-100 />
+  </div>
 </div>
