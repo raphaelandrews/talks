@@ -511,7 +511,7 @@ glowSeed: 368
 
 <span>Confiabilidade</span>
 
-<div mt-24 />
+<div mt-16 />
 
 <div>
 
@@ -581,9 +581,214 @@ glowSeed: 368
 
 # 💯 Métricas
 
-<span>Performance</span>
+<span>Escalabilidade</span>
+
+<div mt-16 />
+
+<div>
+
+  <div class="flex flex-col justify-center items-center">
+    <div v-click="1" class="rounded-lg p-8 bg-teal-900/20 text-center flex flex-col justify-center items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#009689" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-no-axes-combined-icon lucide-chart-no-axes-combined"><path d="M12 16v5"/><path d="M16 14v7"/><path d="M20 10v11"/><path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15"/><path d="M4 18v3"/><path d="M8 14v7"/></svg>
+      <div font-bold text-sm text-nowrap mt-2>Escalabilidade</div>
+    </div>
+  </div>
+
+  <div v-click="2">
+    <div text-center class="mt-6">
+      Capacidade de  <span v-mark="{ at: 3, color: 'rgb(144, 200, 255)', type: 'underline' }">crescer</span> em número de usuários e dados <span v-mark="{ at: 4, color: 'rgb(144, 200, 255)', type: 'underline' }">sem comprometer</span>o desempenho.
+    </div>
+  </div>
+
+</div>
+
+---
+class: py-10
+glow: bottom
+glowSeed: 368
+---
+
+# 💯 Métricas
+
+<span>Escalabilidade</span>
+
+<div mt-8 />
+
+<div v-click="1" class="bg-teal-900/20 rounded-lg p-4">
+  <div font-bold text-teal-300 mb-2 flex items-center>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy-check-icon lucide-copy-check"><path d="m12 15 2 2 4-4"/><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+    <span class="mt-1 ml-2">Aplicação Prática</span>
+  </div>
+  <div class="text-xs bg-teal-800/30 rounded p-2 font-mono">
+    Uma rede social que suporta milhões de acessos simultâneos.
+  </div>
+</div>
+
+<div class="flex gap-4 mt-4">
+  <div v-click="2" class="basis-2/3 border-2 border-emerald-500/30 rounded-lg p-2 bg-emerald-900/20">
+    <div text-xl font-bold mb-4 text-emerald-300 flex items-center>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-spotlight-icon lucide-spotlight"><path d="M15.295 19.562 16 22"/><path d="m17 16 3.758 2.098"/><path d="m19 12.5 3.026-.598"/><path d="M7.61 6.3a3 3 0 0 0-3.92 1.3l-1.38 2.79a3 3 0 0 0 1.3 3.91l6.89 3.597a1 1 0 0 0 1.342-.447l3.106-6.211a1 1 0 0 0-.447-1.341z"/><path d="M8 9V2"/></svg>
+      <span class="mt-1 ml-2">Exemplos</span>
+    </div>
+    <div space-y-3>
+      <div class="px-4 py-2 bg-emerald-800/30 rounded-lg text-sm">
+        <div font-bold>WhatsApp</div>
+        <div text-xs text-emerald-200>Mensagens entregues em tempo real</div>
+      </div>
+      <div class="px-4 py-2 bg-emerald-800/30 rounded-lg text-sm">
+        <div font-bold>PayPal</div>
+        <div text-xs text-emerald-200>Confiável em transações financeiras</div>
+      </div>
+      <div class="px-4 py-2 bg-emerald-800/30 rounded-lg text-sm">
+        <div font-bold>Caixa Eletrônico</div>
+        <div text-xs text-emerald-200>Alta estabilidade em operações</div>
+      </div>
+    </div>
+  </div>
+
+  <div v-click="3" class="basis-1/3 border-2 border-rose-500/30 rounded-lg p-2 bg-rose-900/20">
+    <div text-xl font-bold mb-4 text-rose-300 flex items-center>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-triangle-alert-icon lucide-triangle-alert"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+      <span class="mt-1 ml-2">Fila Virtual</span>
+    </div>
+    <div space-y-3>
+      <div class="px-4 py-2 bg-rose-800/30 rounded-lg text-sm">
+        <div font-bold>Caixa Econômica</div>
+      </div>
+      <div class="px-4 py-2 bg-rose-800/30 rounded-lg text-sm">
+        <div font-bold>Sites de venda de ingressos</div>
+      </div>
+      <div class="px-4 py-2 bg-rose-800/30 rounded-lg text-sm">
+        <div font-bold>Black Friday</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+class: py-10
+glow: bottom
+glowSeed: 368
+---
+
+# 💯 Métricas
+
+<span>UI/UX</span>
+
+<div mt-16 />
+
+<div>
+
+  <div class="flex flex-col justify-center items-center">
+    <div v-click="1" class="rounded-lg p-8 bg-teal-900/20 text-center flex flex-col justify-center items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#009689" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pen-tool-icon lucide-pen-tool"><path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z"/><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18"/><path d="m2.3 2.3 7.286 7.286"/><circle cx="11" cy="11" r="2"/></svg>
+      <div font-bold text-sm text-nowrap mt-2>UI/UX</div>
+    </div>
+  </div>
+
+  <div v-click="2">
+    <div text-center class="mt-6">
+      <span v-mark="{ at: 3, color: 'rgb(144, 200, 255)', type: 'underline' }">Facilidade de uso</span> e <span v-mark="{ at: 4, color: 'rgb(144, 200, 255)', type: 'underline' }">experiência</span> agradável para o usuário.
+    </div>
+  </div>
+
+</div>
+
+---
+class: py-10
+glow: bottom
+glowSeed: 368
+---
+
+# 💯 Métricas
+
+<span>UI/UX</span>
 
 <div mt-24 />
+
+<div v-click="1" class="bg-teal-900/20 rounded-lg p-4">
+  <div font-bold text-teal-300 mb-2 flex items-center>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy-check-icon lucide-copy-check"><path d="m12 15 2 2 4-4"/><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+    <span class="mt-1 ml-2">Aplicação Prática</span>
+  </div>
+  <div class="text-xs bg-teal-800/30 rounded p-2 font-mono">
+    Sistemas com interfaces simples e intuitivas que cumprem o objetivo.
+  </div>
+</div>
+
+---
+class: py-10
+glow: bottom
+glowSeed: 368
+---
+
+# 💯 Métricas
+
+<span>UI/UX</span>
+
+<div mt-8 />
+
+<div class="flex gap-6">
+
+  <div v-click="1" class="basis-1/2 border-2 border-emerald-500/30 rounded-lg p-2 bg-emerald-900/20">
+    <div text-xl font-bold mb-4 text-emerald-300 flex items-center>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-spotlight-icon lucide-spotlight"><path d="M15.295 19.562 16 22"/><path d="m17 16 3.758 2.098"/><path d="m19 12.5 3.026-.598"/><path d="M7.61 6.3a3 3 0 0 0-3.92 1.3l-1.38 2.79a3 3 0 0 0 1.3 3.91l6.89 3.597a1 1 0 0 0 1.342-.447l3.106-6.211a1 1 0 0 0-.447-1.341z"/><path d="M8 9V2"/></svg>
+      <span class="mt-1 ml-2">Exemplos</span>
+    </div>
+    <div space-y-3>
+      <div class="px-4 py-2 bg-emerald-800/30 rounded-lg text-sm">
+        <div font-bold>Amazon</div>
+        <div text-xs text-emerald-200>Compras em poucos cliques</div>
+      </div>
+      <div class="px-4 py-2 bg-emerald-800/30 rounded-lg text-sm">
+        <div font-bold>Airbnb</div>
+        <div text-xs text-emerald-200>Design intuitivo para reservas</div>
+      </div>
+      <div class="px-4 py-2 bg-emerald-800/30 rounded-lg text-sm">
+        <div font-bold>Duolingo</div>
+        <div text-xs text-emerald-200>Gamificação para aprendizado de idiomas</div>
+      </div>
+    </div>
+  </div>
+
+  <div v-click="2" class="basis-1/2">
+    <n-carousel arrow draggable class="carousel">
+      <img
+        class="carousel-img"
+        src="/amazon.jpg"
+      >
+      <img
+        class="carousel-img"
+        src="/airbnb.jpg"
+      >
+      <img
+        class="carousel-img"
+         src="/duolingo.png"
+      >
+    </n-carousel>
+  </div>
+
+  <style scoped>
+    .carousel-img {
+      width: 100%;
+      height: 240px;
+      object-fit: fill;
+    }
+  </style>
+
+</div>
+
+---
+class: py-10
+glow: bottom
+glowSeed: 368
+---
+
+# 💯 Métricas
+
+<span>Performance</span>
+
+<div mt-16 />
 
 <div>
 
