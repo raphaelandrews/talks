@@ -14,6 +14,10 @@ preload: false
 glowSeed: 200
 routerMode: hash
 class: flex justify-center items-center gap-20 px-40 text-xl
+addons:
+  - tldraw
+syncSettings:
+  server: https://talks-ndrws.vercel.app
 ---
 
 <div translate-x--35>
@@ -75,6 +79,10 @@ glowSeed: 203
 </div>
 
 ---
+
+<tldraw class="w-200 h-120" doc="tldraw/doc-rxc69jiEj2HVqUgTWJ-LF.json"></tldraw>
+
+---
 class: flex justify-center items-center gap-20 px40 text-xl overflow-hidden
 clicks: 1
 ---
@@ -122,7 +130,7 @@ glowSeed: 203
 
 ---
 class: py-10
-clicks: 8
+clicks: 6
 glowSeed: 350
 ---
 
@@ -329,12 +337,14 @@ glowSeed: 203
 
 <div flex flex-col items-center>
   <v-clicks>
-    <div mt-4 transition="all ease-in-out" flex flex-col flex-start
-      duration-1500 :class="$slidev.nav.clicks > 1 ? 'translate-x-[-280px] translate-y-[-218px]' : ''">
-      <h1 flex items-center font-bold transition="all duration-1000 ease-in-out" :class="$slidev.nav.clicks > 1 ? 'text-3xl! mb-3!' : 'text-5xl!'">
-        <span>🏛️ Pilares Fundamentais</span>
-      </h1>
-       <span text-sm transition="all ease-in-out" :class="$slidev.nav.clicks > 1 ? 'opacity-50' : 'opacity-0'">Gestão da Qualidade no Desenvolvimento de Software</span>
+    <div transition="all duration-1000 ease-in-out" :class="$slidev.nav.clicks > 0 ? 'opacity-100' : 'opacity-0'">
+      <div mt-4 transition="all ease-in-out" flex flex-col flex-start
+        duration-1500 :class="$slidev.nav.clicks > 1 ? 'translate-x-[-280px] translate-y-[-218px]' : ''">
+        <h1 flex items-center font-bold transition="all duration-1000 ease-in-out" :class="$slidev.nav.clicks > 1 ? 'text-3xl! mb-3!' : 'text-5xl!'">
+          <span>🏛️ Pilares Fundamentais</span>
+        </h1>
+        <span text-sm transition="all ease-in-out" :class="$slidev.nav.clicks > 1 ? 'opacity-50' : 'opacity-0'">Gestão da Qualidade no Desenvolvimento de Software</span>
+      </div>
     </div>
   </v-clicks>
 </div>
@@ -471,10 +481,10 @@ glowSeed: 203
 >
   <div border="2 solid rose-600" bg="rose-800/80" rounded-lg w="[50%]">
 
-  <div font-bold rounded-t-lg bg="rose-800" px-4 py-3>Testes</div>
+  <div font-bold rounded-t-lg bg="rose-800" px-4 py-3>Melhoria Contínua</div>
 
   <div px-4 py-3 text-sm>
-     A fase de testes é crítica e envolve diversos tipos, como testes de unidade, integração, sistema, aceitação, performance, segurança e usabilidade. Automação de testes é um facilitador poderoso.
+    A cultura de feedback e aprendizado é essencial. Após cada ciclo de desenvolvimento, as equipes devem analisar o que funcionou e o que pode ser aprimorado.
   </div>
 
   </div>
