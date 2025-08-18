@@ -59,12 +59,11 @@
     "vue": "^3.5.13"
   },
   "dependencies": {
-    "slidev-addon-sync": "^0.1.0",
+    "naive-ui": "^2.42.0",
     "slidev-addon-tldraw": "^0.4.2"
   },
   "slidev": {
     "addons": [
-      "slidev-addon-sync",
       "tldraw"
     ]
   }
