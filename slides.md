@@ -581,31 +581,107 @@ glowSeed: 368
 
 # 💯 Métricas
 
-<span>Confiabilidade</span>
+<span>Performance</span>
+
+<div mt-24 />
+
+<div>
+
+  <div class="flex flex-col justify-center items-center">
+    <div v-click="1" class="rounded-lg p-8 bg-teal-900/20 text-center flex flex-col justify-center items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#009689" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap-icon lucide-zap"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+      <div font-bold text-sm text-nowrap mt-2>Performance</div>
+    </div>
+  </div>
+
+  <div v-click="2">
+    <div text-center class="mt-6">
+      <span v-mark="{ at: 3, color: 'rgb(144, 200, 255)', type: 'underline' }">Velocidade</span> e <span v-mark="{ at: 4, color: 'rgb(144, 200, 255)', type: 'underline' }">eficiência</span> com que o software executa suas funções.
+    </div>
+  </div>
+
+</div>
+
+---
+class: py-10
+glow: bottom
+glowSeed: 368
+---
+
+# 💯 Métricas
+
+<span>Performance</span>
+
+<div mt-24 />
+
+<div v-click="1" class="bg-teal-900/20 rounded-lg p-4">
+  <div font-bold text-teal-300 mb-2 flex items-center>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy-check-icon lucide-copy-check"><path d="m12 15 2 2 4-4"/><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+    <span class="mt-1 ml-2">Aplicação Prática</span>
+  </div>
+  <div class="text-xs bg-teal-800/30 rounded p-2 font-mono">
+    Sistemas capazes de carregar páginas em menos de 2 segundos.
+  </div>
+</div>
+
+---
+class: py-10
+glow: bottom
+glowSeed: 368
+---
+
+# 💯 Métricas
+
+<span>Performance</span>
 
 <div mt-8 />
 
-<div v-click="2" class="columns-2">
-  <n-carousel arrow draggable class="carousel">
-    <img
-      class="carousel-img"
-      src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel1.jpeg"
-    >
-    <img
-      class="carousel-img"
-      src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel2.jpeg"
-    >
-    <img
-      class="carousel-img"
-      src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel3.jpeg"
-    >
-  </n-carousel>
-</div>
+<div class="flex gap-6">
 
-<style scoped>
-  .carousel-img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-  }
-</style>
+  <div v-click="1" class="basis-1/2 border-2 border-emerald-500/30 rounded-lg p-2 bg-emerald-900/20">
+    <div text-xl font-bold mb-4 text-emerald-300 flex items-center>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-spotlight-icon lucide-spotlight"><path d="M15.295 19.562 16 22"/><path d="m17 16 3.758 2.098"/><path d="m19 12.5 3.026-.598"/><path d="M7.61 6.3a3 3 0 0 0-3.92 1.3l-1.38 2.79a3 3 0 0 0 1.3 3.91l6.89 3.597a1 1 0 0 0 1.342-.447l3.106-6.211a1 1 0 0 0-.447-1.341z"/><path d="M8 9V2"/></svg>
+      <span class="mt-1 ml-2">Exemplos</span>
+    </div>
+    <div space-y-3>
+      <div class="px-4 py-2 bg-emerald-800/30 rounded-lg text-sm">
+        <div font-bold>McMaster-Carr</div>
+        <div text-xs text-emerald-200>Ecommerce de alta performance</div>
+      </div>
+      <div class="px-4 py-2 bg-emerald-800/30 rounded-lg text-sm">
+        <div font-bold>Netflix</div>
+        <div text-xs text-emerald-200>Streaming sem travar mesmo em HD/4K</div>
+      </div>
+      <div class="px-4 py-2 bg-emerald-800/30 rounded-lg text-sm">
+        <div font-bold>Google Search</div>
+        <div text-xs text-emerald-200>Resultados em milissegundos</div>
+      </div>
+    </div>
+  </div>
+
+  <div v-click="2" class="basis-1/2">
+    <n-carousel arrow draggable class="carousel">
+      <img
+        class="carousel-img"
+        src="/mcmaster-carr.jpg"
+      >
+      <img
+        class="carousel-img"
+        src="/netflix.jpg"
+      >
+      <img
+        class="carousel-img"
+         src="/google.jpg"
+      >
+    </n-carousel>
+  </div>
+
+  <style scoped>
+    .carousel-img {
+      width: 100%;
+      height: 240px;
+      object-fit: fill;
+    }
+  </style>
+
+</div>
