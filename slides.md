@@ -43,7 +43,7 @@ glowSeed: 203
   :class="$clicks < 1 ? 'text-white' : 'translate-y--18 scale-40 text-white/30'"
   transition duration-500 ease-in-out
 >
-  <span transition="all 1000! ease-in-out" :class="$clicks > 1 ? 'opacity-0' : ''">🎭 Cultura da Liderança</span>
+  <span transition="all 1000! ease-in-out" :class="$clicks > 1 ? 'opacity-0' : ''">🎭 Cultura da Qualidade</span>
 </div>
 
 <div flex flex-col items-center>
@@ -66,10 +66,10 @@ glowSeed: 203
     <div text-left w-full h-full flex="~ col justify-center">
       <div class="font-bold text-3xl mb-8">✳️ Principais Características</div>
         <div class="space-y-2 list-decimal pl-4">
-          <div v-click>📈 Compromisso com a melhoria contínua</div>
-          <div v-click>✅ Valorização da padronização de processos</div>
+          <div v-click>✅ Valorização da padronização de processos</div>         
           <div v-click>🎉 Incentivo à participação e envolvimento de todos os colaboradores</div>
           <div v-click>💬 Comunicação clara e transparente</div>
+          <div v-click>📈 Compromisso com a melhoria contínua</div>
           <div v-click>🎯 Foco no cliente interno e externo</div>
         </div>
       </div>
@@ -117,7 +117,7 @@ glowSeed: 203
       <div class="font-bold text-3xl mb-8">📑 Papéis da Liderança</div>
         <div class="space-y-2 list-decimal pl-4">
           <div v-click>🎯 Definir uma visão clara para a qualidade, alinhada à missão e valores da organização</div>
-          <div v-click>🌟 Servir como exemplo de comprometiment o e responsabilidade</div>
+          <div v-click>🌟 Servir como exemplo de comprometimento e responsabilidade</div>
           <div v-click>🤝 Promover um ambiente de confiança, abertura e cooperação</div>
           <div v-click>🧠 Incentivar a capacitação e o desenvolvimento de competências</div>
           <div v-click>🥳 Reconhecer e valorizar conquistas relacionadas à qualidade</div>
